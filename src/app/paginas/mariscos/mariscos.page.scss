@@ -1,0 +1,50 @@
+
+.card {
+  position: relative;
+
+  left: 5%;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Perspectiva para el efecto 3D */
+  transition: transform 0.5s; /* Transición para el efecto de volteo */
+}
+
+/* Estilos para el frente de la card */
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta la cara trasera */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para la cara trasera de la card */
+.back  {
+  backface-visibility: hidden;
+  transform: rotateY (180deg); /* Gira la cara trasera para ocultarla al inicio */
+  background-color: white; /* Fondo blanco para la pantalla en blanco */
+  color: black; /* Texto negro para la descripción */
+  padding: 20px;
+}
+
+/* Estilos para la card volteada */
+.card.flipped {
+  transform: rotateY(180deg); /* Voltea la card para mostrar la descripción */
+  transform-origin: 50%;
+}
+
+/* Estilos para ocultar el frente cuando la card está volteada */
+.card.flipped .front {
+  display: none;
+}
+.card.flipped .back p {
+  transform: rotateY(180deg); /* Voltea el texto de la descripción */
+  font-size: 20px;
+}
+.front h1{
+  padding: 10px;
+}
+

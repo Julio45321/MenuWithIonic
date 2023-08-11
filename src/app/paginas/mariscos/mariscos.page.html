@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="card" [class.flipped]="isFlipped" (click)="flipCard()">
+    <ion-card-content class="front">
+      <img src="../../../assets/img/casuela.jpeg" alt="Imagen de la Card">
+    </ion-card-content>
+    <div class="back">
+      <p>Cazuela de mariscos</p>
+      <p>Caldo de mariscos (camaron, pulpo, caracol y ostion).</p>
+      <p>$160.00</p>
+    </div>
+  </ion-card>
+
+  <ion-card class="card" [class.flipped]="isFlipped2" (click)="flipCard2()">
+    <ion-card-content class="front">
+      <img src="../../../assets/imgEspec/pulpostintas.jpg" alt="Imagen de la Card">
+    </ion-card-content>
+    <div class="back">
+      <p>Pulpos en su tinta</p>
+      <p>Pulpos cocinados en tinta del mismo</p>
+      <p>$230.00</p>
+    </div>
+  </ion-card>
+
+</ion-content>

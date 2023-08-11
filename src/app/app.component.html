@@ -1,3 +1,50 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu contentId="menu" menuId="menuAct" side="start" type="overlay" >
+    <ion-header collapse="condense">
+      <ion-toolbar color="azulito" >
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="background">
+      <ion-list>
+        <ion-menu-toggle auto-hide="true">
+          <ion-item  class="background">
+            <ion-icon slot="start" name="wine" class="ion-padding"></ion-icon>
+            <ion-label routerLink="/bebidas">Bebidas</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="true">
+          <ion-item class="background">
+            <ion-icon slot="start" name="restaurant" class="ion-padding"></ion-icon>
+            <ion-label routerLink="/carnes">Carnes</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="true">
+          <ion-item class="background">
+            <ion-icon slot="start" name="pizza" class="ion-padding"></ion-icon>
+            <ion-label routerLink="/entradas">Entradas</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="true">
+          <ion-item class="background">
+            <ion-icon slot="start" name="fast-food" class="ion-padding"></ion-icon>
+            <ion-label routerLink="/especialidades">Especialidades</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="true">
+          <ion-item class="background">
+            <ion-icon slot="start" name="fish" class="ion-padding"></ion-icon>
+            <ion-label routerLink="/mariscos">Mariscos</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="true">
+          <ion-item class="background">
+            <ion-icon slot="start" name="ice-cream" class="ion-padding"></ion-icon>
+            <ion-label routerLink="/postres">Postres</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="menu"></ion-router-outlet>
 </ion-app>

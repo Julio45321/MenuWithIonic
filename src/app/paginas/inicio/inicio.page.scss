@@ -1,0 +1,56 @@
+ion-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ion-card {
+  max-width: 300px;
+  margin: 0 auto;
+  transition: transform 0.2s;
+}
+ion-slides {
+  width: 100%;
+}
+
+ion-slide {
+  width: 100%;
+}
+
+ion-card img {
+  width: 100%;
+  height: 100%; /* Altura deseada de la imagen */
+  object-fit: cover;
+}
+ion-card:hover {
+  transform: scale(1.05); /* Ajusta el valor para el efecto de agrandamiento */
+}
+
+.social-icons {
+  ion-icon {
+    font-size: 2rem; /* Tamaño mediano de los iconos */
+    margin: 0 10px; /* Espacio de separación horizontal entre los iconos */
+  }
+}
+ion-footer a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Utiliza el color del texto heredado */
+}
+ion-footer {
+  transition: height 0.3s ease-in-out; /* Ajusta la duración y el efecto de la animación según prefieras */
+}
+
+.footer-condensed {
+  height: 50px; /* Altura reducida del footer cuando se condensa */
+}
+ion-footer ion-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ion-footer ion-col{
+  align-items: center;
+}
+ion-footer ion-row{
+  align-items: center;
+}
